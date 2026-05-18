@@ -63,7 +63,7 @@ public class VillagerMixin {
 	}
 
 	@Unique
-    private ItemCost convertCurrency(int emeralds) {
+	private ItemCost convertCurrency(int emeralds) {
 		Item coin;
 		int minMultiplier;
 		int maxMultiplier;
