@@ -29,21 +29,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             public void buildRecipes() {
                 HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
 
-                shaped(RecipeCategory.MISC, ModItems.COPPER_COIN, 4)
+                shaped(RecipeCategory.MISC, ModItems.COPPER_COIN, 2)
                         .pattern("nn")
                         .pattern("nn")
                         .define('n', Items.COPPER_NUGGET)
                         .unlockedBy(getHasName(Items.COPPER_NUGGET), has(Items.COPPER_NUGGET))
                         .save(output);
 
-                shaped(RecipeCategory.MISC, ModItems.IRON_COIN, 4)
+                shaped(RecipeCategory.MISC, ModItems.IRON_COIN, 2)
                         .pattern("nn")
                         .pattern("nn")
                         .define('n', Items.IRON_NUGGET)
                         .unlockedBy(getHasName(Items.IRON_NUGGET), has(Items.IRON_NUGGET))
                         .save(output);
 
-                shaped(RecipeCategory.MISC, ModItems.GOLD_COIN, 4)
+                shaped(RecipeCategory.MISC, ModItems.GOLD_COIN, 2)
                         .pattern("nn")
                         .pattern("nn")
                         .define('n', Items.GOLD_NUGGET)
