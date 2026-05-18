@@ -3,7 +3,7 @@
 	"package": "dev.danielius.currency.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"VillagerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
