@@ -1,5 +1,6 @@
 package dev.danielius.currency;
 
+import dev.danielius.currency.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +12,7 @@ public class Currency implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize() {}
+	public void onInitialize() {
+		ModItems.initialize();
+	}
 }
